@@ -1,36 +1,69 @@
-*{
+html{
+    /* background-color: #d3d3d3; */
+    background-color: #4267b2;
+}
+body{
     margin:0px;
     padding:0px;
+    font-family: 'Barlow', sans-serif;
+
 }
-html{
-    background-color: #eee;
-}
+
 #main-header {
     text-align: center;
     color: #fff;
-    background-color: #222831;
+    /* background-color: #222831; */
     padding:3px;
+
 }
+
 
 .profilePic{
     position: relative;
+    text-align: center;
     width: 300px;
     border-radius: 50%;
     margin-top: 10px;
+    
 }
 
-.container{
-    
+#container{
     text-align: center;
+
+    max-width: 600px;
+    max-height: 100vh;
     background-color: #d3d3d3;
-    color: #222831;
-    margin: 0 auto;
-    width: 500px;
+    margin:0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.842);
+    
+} 
+
+.profile{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.842);
+    border-radius: 10pt;
+    width: 600px;
+    height: 700px;
+    /* background: #fff; */
+    /* background: #6C7A89; */
+    margin-top: 30px;
+}
+
+.bio{
+    background-color: #3d3d3d;
+    color: #fff;
+    margin:0 auto;
+    margin-top:0px;
+    margin-bottom:0px;
+    width: 100%;
     max-height: 0px;
-    margin-top: 5px;
-    border-radius: 10px;
-    transition: all 2s;
+    transition: all 1.5s;
     overflow: hidden;
+    text-align: left;
 
 }
 
@@ -39,22 +72,21 @@ html{
 }
 
 .checkLabel{
-    color: #222831;
-    text-align: center;
-    display: block;
-    position: relative;
-    right:193px;
-    
+    margin-bottom: 0px;
+    margin-top: 10px;
+    display: inline-block;
+    height: 25px;
+    width: 100%;
+    color: #ccc;
     cursor: pointer;
     transition: color 0.5s;
+    background-color: rgb(26, 26, 240);
+    
+
 }
 
 .checkLabel:hover{
-    color: green;
-}
-
-#check:checked + .checkLabel{
-    color: rgb(200,200,0);
+    color: #eee;
 }
 
 
@@ -63,26 +95,25 @@ html{
     display: inline-block;
     border-bottom: 5px solid transparent;
     border-top: 5px solid transparent;
-    border-left: 5px solid #222831;
-    margin-right:3px;
-    transition: transform 0.7s;
+    border-left: 5px solid #d3d3d3;
+    vertical-align: middle;
+    margin-right: .7rem;
+    transition: transform .3s ease-in-out;
+}
+
+.bio div{
+    margin: 10px;
 }
 
 #check:checked + .checkLabel::before{
+    
     transform: rotate(90deg);
 }
 
-#check:checked + .checkLabel + .container{
-    max-height: 300px;
+#check:checked + .checkLabel + .bio{
+    max-height: 600px;
 }
 
-.container div{
-    display: inline-block;
-    width:60%;
-    text-align: center;
-}
 
-.img{
-    text-align: center;
-}
+
 
