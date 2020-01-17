@@ -1,0 +1,88 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+html{
+    background-color: #eee;
+}
+#main-header {
+    text-align: center;
+    color: #fff;
+    background-color: #222831;
+    padding:3px;
+}
+
+.profilePic{
+    position: relative;
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.container{
+    
+    text-align: center;
+    background-color: #d3d3d3;
+    color: #222831;
+    margin: 0 auto;
+    width: 500px;
+    max-height: 0px;
+    margin-top: 5px;
+    border-radius: 10px;
+    transition: all 2s;
+    overflow: hidden;
+
+}
+
+#check{
+    display: none;
+}
+
+.checkLabel{
+    color: #222831;
+    text-align: center;
+    display: block;
+    position: relative;
+    right:193px;
+    
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.checkLabel:hover{
+    color: green;
+}
+
+#check:checked + .checkLabel{
+    color: rgb(200,200,0);
+}
+
+
+.checkLabel::before{
+    content: ' ';
+    display: inline-block;
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 5px solid #222831;
+    margin-right:3px;
+    transition: transform 0.7s;
+}
+
+#check:checked + .checkLabel::before{
+    transform: rotate(90deg);
+}
+
+#check:checked + .checkLabel + .container{
+    max-height: 300px;
+}
+
+.container div{
+    display: inline-block;
+    width:60%;
+    text-align: center;
+}
+
+.img{
+    text-align: center;
+}
+
