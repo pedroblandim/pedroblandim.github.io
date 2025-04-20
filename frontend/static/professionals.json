@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Dra. Ana Silva",
+    "specialty": "Médica Clínica Geral",
+    "image": "static/dra-ana-silva.png"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Carlos Souza",
+    "specialty": "Nutricionista",
+    "image": "static/dr-carlos-souza.png"
+  },
+  {
+    "id": 3,
+    "name": "Enfermeira Mariana Lima",
+    "specialty": "Enfermeira",
+    "image": "static/enfermeira-mariana-lima.png"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Ricardo Menezes",
+    "specialty": "Médico Cardiologista",
+    "image": "static/dr-ricardo-menezes.png"
+  }
+]
