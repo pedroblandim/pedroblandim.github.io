@@ -1,3 +1,13 @@
+# Como executar
+Você pode utilizar o plugin de Live Preview do VS Code, que irá iniciar um servidor de arquivo estático automaticamente. Uma outra opção é executar o seguinte comando no seu terminal, dentro da raiz do projeto:
+
+```bash
+python -m http.server
+```
+e depois acessar a URL http://0.0.0.0:8000/.
+
+[URL do projeto no GitHub Pages.](https://pedroblandim.github.io/) 
+
 # Projeto
 Uma clínica oferece diversos serviços de saúde, desde atendimento médico, exames laboratoriais e de imagem, aconselhamento nutricional, entre outros procedimentos. Recentemente houve uma mudança na administração da clínica e os novos gestores decidiram reformular todas as soluções de tecnologia da empresa a fim de melhorar a experiência dos pacientes. Para isso, a clínica contratou a empresa onde você trabalha para desenvolver as soluções a seguir:
 
