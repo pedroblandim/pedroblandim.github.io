@@ -23,17 +23,18 @@ function setProfessionalsSpecialties(professionals) {
 
 function setListeners() {
   const searchInput = document.querySelector("#busca");
+  const specialtySelect = document.querySelector("#especialidade");
+
   searchInput.addEventListener(
     "input",
-    debounce(async (e) => {
-      const professionals = await getProfessionals(e.target.value);
+    debounce(async () => {
+      const professionals = await getProfessionals(searchInput.value, specialtySelect.value);
       setProfessionals(professionals);
     })
   );
 
-  const specialtySelect = document.querySelector("#especialidade");
-  specialtySelect.addEventListener("change", async (e) => {
-    const professionals = await getProfessionals(searchInput.value, e.target.value);
+  specialtySelect.addEventListener("change", async () => {
+    const professionals = await getProfessionals(searchInput.value, specialtySelect.value);
     setProfessionals(professionals);
   });
 }
