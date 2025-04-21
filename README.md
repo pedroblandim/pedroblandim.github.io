@@ -1,3 +1,6 @@
+# GitHub Pages
+https://pedroblandim.github.io/
+
 # Como executar
 Você pode utilizar o plugin de Live Preview do VS Code, que irá iniciar um servidor de arquivo estático automaticamente. Uma outra opção é executar o seguinte comando no seu terminal, dentro da raiz do projeto:
 
